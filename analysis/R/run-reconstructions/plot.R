@@ -28,7 +28,7 @@ plotCompResid <- function( rpt, d=16:100, folder="." )
       if(sum(!is.na(obsN_sdtg[,,t,g]))>0)
       {
         main <- paste( rpt$gears[g], rpt$years[t] )
-        res_sd <- P_sd - Phat_sd 
+        res_sd <- P_sd - Phat_sd
         colnames(res_sd) <- rpt$day_d[d]
         rownames(res_sd) <- rpt$stocks
         bubblePlot( res=res_sd, main=main )
@@ -55,7 +55,7 @@ bubblePlot <- function( res, main="" )
            mutate( col    = ifelse( value>0, "black", rgb(191,191,191,maxColorValue=255) ),
                    bgcol  = ifelse( value>0, NA, rgb(191,191,191,50,maxColorValue=255) ),
                    radius = abs(value) )
-  
+
   plot( x=range(days), y=c(0,nrow(res)+1), type="n", xlab="",
         ylab="", axes=FALSE, main=main )
   symbols( x=resDF$x, y=resDF$y, circles=resDF$radius, add=TRUE,
@@ -97,10 +97,10 @@ plotCompFits <- function( rpt, d=16:100, folder="." )
       if(sum(!is.na(obsN_sdtg[,,t,g]))>0)
       {
         main <- paste( rpt$gears[g], rpt$years[t] )
-        res_sd <- P_sd - Phat_sd 
+        res_sd <- P_sd - Phat_sd
         colnames(res_sd) <- rpt$day_d[d]
         rownames(res_sd) <- rpt$stocks
-        
+
         for( s in 1:rpt$nS )
         {
           plot( P_sd[s, ], ylim=c(0,1), type="n", axes=FALSE )
@@ -116,7 +116,7 @@ plotCompFits <- function( rpt, d=16:100, folder="." )
             axis( side=2, las=1 )
 
         }
-      
+
         par(font=2)
         mtext( side=3, text=main, cex=1.2, outer=TRUE, line=0.5 )
         par(font=1)
@@ -161,7 +161,7 @@ plotFitI <- function( rpt, folder="." )
     mtext( side=2, outer=TRUE, line=1,
            text=ylab[g] )
     mtext( side=1, outer=TRUE, line=1,
-           text="Day of year" )    
+           text="Day of year" )
     dev.off()
   } # next g
 }
@@ -203,7 +203,7 @@ plotFitIMulti <- function( rptFiles=c("mod1test4/rpt.Rdata",
         plotbg()
         box()
         points( x=rpt$day_d, y=I_d )
-        for( i in 1:3 )      
+        for( i in 1:3 )
           lines( x=rpt$day_d, y=E_id[i, ], lwd=1.5, col=cols[i], lty=ltys[i] )
         legend( x="topright", bty="n", legend=rpt$years[t] )
 
@@ -231,42 +231,42 @@ plotFitIMulti <- function( rptFiles=c("mod1test4/rpt.Rdata",
 plotTotalRunSize <- function( rpt, folder="." )
 {
   png( file=paste(folder,"/totalRunSize.png",sep=""), height=5, width=7, units="in", res=600)
-  
+
   par( mar=c(5,5,1,1) )
-  
+
   t <- rep(TRUE,rpt$nT)
   yr  <- rpt$years[t]
   I_t <- rpt$I_t[t]*1e-3/exp(rpt$lnqI_s[1])
   E_t <- colSums(exp(rpt$lnRunSize_st))[t]*1e-3
   sonarN_t <- colSums(rpt$E_dtg[ ,t,1])*1e-3
   ymax <- max(I_t,E_t,sonarN_t,na.rm=TRUE)
-  
+
   # Fish wheel
   fw_t <- 1e-3*colSums(rpt$E_dtg[,,2])/exp(rpt$lnqE_tg[ ,2])
-  
+
   plot( x=yr, y=I_t, type="n", las=1, yaxs="i", xlab="Year",
         ylab="Total border passage (1000s)", ylim=c(0,1.1*ymax) )
   grid()
   box()
-  
+
   if( is.finite(rpt$sdrpt[1,5]) )
   {
     Ese <- filter(rpt$sdrpt,par=="runSize_t")[t, ]
     segments( x0=yr, y0=Ese$lCI*1e-3, y1=Ese$uCI*1e-3, col="grey70", lwd=4 )
   }
-  
+
   points( x=yr, y=E_t, pch=16, col="grey40" )
   points( x=yr, y=I_t, pch=0, lwd=1.5 )
   points( x=yr, y=sonarN_t, pch=1, lwd=1.5, col="red" )
   points( x=yr, y=fw_t, pch=2, lwd=1.5, col="green" )
-  
+
   legend( x="bottomleft", bty="n",
           legend=c("Run reconstruction estimates","Mark-recapture estimates","Fish wheel counts","Sonar counts"),
           pch=c(NA,NA,NA,NA), lwd=c(4,0,0,0), col=c("grey70","black","green","red"), lty=c(1,0,0,0), cex=0.8)
   legend( x="bottomleft", bty="n",
           legend=c("Run reconstruction estimates","Mark-recapture estimates","Fish wheel counts","Sonar counts"),
           pch=c(16,0,2,1), lwd=c(1.5,1.5), col=c("grey40","black","green","red"), lty=c(0,0,0,0), cex=0.8 )
-  
+
   dev.off()
 }
 
@@ -293,7 +293,7 @@ plotTotalRunSizeMulti <- function( rptFiles=c("mod1test2/rpt.Rdata",
         ylab="Total run size (1000s)", ylim=c(0,120) )
   grid()
   box()
-  
+
   jtr <- c(-0.2,0,0.2)
 
   for( i in 1:3 )
@@ -612,7 +612,7 @@ plotArrival <- function( rpt, folder="." )
             labels = rpt$years[tseq] )
       legend( x="topleft", legend=rpt$stocks[s], bty="n" )
 
-                   
+
     }
 
   }
@@ -658,7 +658,7 @@ plotArrivalByYear <- function( rpt, folder="." )
       mtext( side=2, text="Daily border passage (1000s)", outer=TRUE, line=1, cex=1.3 )
       mtext( side=1, text="Julian day", outer=TRUE, line=1, cex=1.3 )
     }
-  
+
     if( t %in% c(16,rpt$nT) )
     {
       dev.off()
@@ -697,7 +697,7 @@ plotCompN <- function( rpt, folder="." )
         legend( x="topleft", bty="n", legend=rpt$years[t], cex=1.3 )
       }
     }
-  
+
     mtext(side=2,line=2.5,cex=1.5,outer=TRUE,
           text=paste(rpt$gears[g],"GSI sample size"))
 
@@ -945,7 +945,7 @@ plotDailyAvg <- function( rptFile="mod1/rpt.Rdata" )
     box()
     lines( x=rpt$day_d, y=x1_d, lwd=1.5 )
     lines( x=rpt$day_d, y=x2_d, lwd=1.5, col="red" )
-    
+
     legend( x="topright", legend=stks[s], bty="n", cex=1.2 )
 
     if( s==1 )
@@ -960,6 +960,44 @@ plotDailyAvg <- function( rptFile="mod1/rpt.Rdata" )
 
 
 
+plotFitI_FR <- function( rpt, folder="." )
+{
+  dims <- list( c(5,4), c(6,4) )
+  hei <- c(8,10)
+  wid <- c(6,7)
+  ylab <- c("Abondance (en milliers)","Abondance relative")
+
+  lims <- list( c(18,76), c(15,111) )
+
+  z <- 0
+  for( g in 1:rpt$nG )
+  {
+    png( file=paste(folder,"/indexFitsg",g,".png",sep=""),
+         height=hei[g], width=wid[g] ,units="in", res=600)
+    par( mfrow=dims[[g]], mar=c(2,2,1,1), oma=c(3,3,0,0) )
+    for( t in 1:rpt$nT )
+    {
+      I_d <- 1e-3*rpt$E_dtg[ ,t,g]
+      E_d <- 1e-3*rpt$Ihat_dtg[ ,t,g]
+      if( sum(!is.na(I_d))>0 )
+      {
+        plot( x=rpt$day_d, y=I_d, xlim=rpt$day_d[lims[[g]]],
+              ylim=c(0,1.1*max(I_d,E_d,na.rm=1)),
+              las=1, xlab="", ylab="",cex=0.8 )
+        grid()
+        box()
+        lines( x=rpt$day_d, y=E_d, lwd=2 )
+        legend( x="topright", bty="n", legend=rpt$years[t] )
+      }
+    } # next t
+
+    mtext( side=2, outer=TRUE, line=1,
+           text=ylab[g] )
+    mtext( side=1, outer=TRUE, line=1,
+           text="Jour de l’année" )
+    dev.off()
+  } # next g
+}
 
 
 

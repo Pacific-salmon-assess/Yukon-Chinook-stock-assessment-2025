@@ -55,10 +55,12 @@ fw_as_1984_2006 <- fw_age_sex |>
     select(Sample.Year,Sex, age_4, age_5, age_6, age_7)
 
 # merge datasets
-cdn_as_1985_2024 <- rbind(fw_as_1984_2006,eagle_as_2005_2024)
+cdn_as_1985_2024 <- rbind(fw_as_1984_2006,eagle_as_2005_2024)|>
+  mutate(across(where(is.numeric), ~ round(., digits = 2)))
 
 write.csv(cdn_as_1985_2024[which(cdn_as_1985_2024$Sex=="female"),], here("analysis/data/raw/female_age_comps.csv"),row.names = FALSE)
 write.csv(cdn_as_1985_2024[which(cdn_as_1985_2024$Sex=="male"),], here("analysis/data/raw/male_age_comps.csv"),row.names = FALSE)
+write.csv(cdn_as_1985_2024, here("analysis/data/raw/sex_age_comps.csv"),row.names = FALSE)
 
 ## wrangling for full length dataset
 # fish wheel data

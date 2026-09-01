@@ -1,37 +1,37 @@
 "","CU","par","scenario","model","post_mean","post_med","post_lwr","post_upr"
-"1","Big.Salmon","alpha","reference (most recent generation)","Time-varying alpha",0.525340062872473,0.504996671005362,-0.39193490180851,1.48331760961965
-"2","MiddleYukonR.andtribs.","alpha","reference (most recent generation)","Time-varying alpha",0.567771354086639,0.557887542985469,-0.731765696652206,1.81638936173892
-"3","Nordenskiold","alpha","reference (most recent generation)","Time-varying alpha",2.17580320857067,2.1458131629473,0.935326285387352,3.62341907707372
-"4","NorthernYukonR.andtribs.","alpha","reference (most recent generation)","Time-varying alpha",0.253109461397634,0.214308703334948,-0.634928268327327,1.226090692397
-"5","Pelly","alpha","reference (most recent generation)","Time-varying alpha",0.10161233814945,0.132029596491016,-1.01042018785846,1.14949515843943
-"6","Stewart","alpha","reference (most recent generation)","Time-varying alpha",0.788300925118817,0.826684880332494,-0.364467908173732,1.76740747844141
-"7","UpperYukonR.","alpha","reference (most recent generation)","Time-varying alpha",0.735058394887518,0.775493522590054,-0.421478257090206,1.70874731357658
-"8","Whiteandtribs.","alpha","reference (most recent generation)","Time-varying alpha",0.276300006638104,0.257425353877835,-0.483664670277764,1.10953490684708
-"9","YukonR.Teslinheadwaters","alpha","reference (most recent generation)","Time-varying alpha",1.51168669584902,1.55959172824854,0.496290835922777,2.32478773310411
-"10","Big.Salmon","alpha","robustness (long-term average)","Time-varying alpha",1.48250187124554,1.54753268711799,-0.0472398761980545,2.53779805765541
-"11","MiddleYukonR.andtribs.","alpha","robustness (long-term average)","Time-varying alpha",1.34272518721847,1.44152000290316,-0.25176932425065,2.40180829868203
-"12","Nordenskiold","alpha","robustness (long-term average)","Time-varying alpha",2.08383507482008,2.09171097441306,0.973885594079529,3.17067133237122
-"13","NorthernYukonR.andtribs.","alpha","robustness (long-term average)","Time-varying alpha",1.48490988212023,1.53214260588934,-0.286495122049314,3.02836417365615
-"14","Pelly","alpha","robustness (long-term average)","Time-varying alpha",1.1952073382413,1.27276339679307,-0.651581604752884,2.307654743612
-"15","Stewart","alpha","robustness (long-term average)","Time-varying alpha",1.57776802227487,1.58835875426283,0.13927516511301,2.81218518889109
-"16","UpperYukonR.","alpha","robustness (long-term average)","Time-varying alpha",1.36632122846107,1.38857149834818,0.126112459815381,2.37447938707871
-"17","Whiteandtribs.","alpha","robustness (long-term average)","Time-varying alpha",1.25318016016367,1.23905726167132,-0.169842772691727,2.54130551515596
-"18","YukonR.Teslinheadwaters","alpha","robustness (long-term average)","Time-varying alpha",1.9308184246065,1.86650346216065,0.898711676707374,3.06745429873263
-"19","Big.Salmon","alpha","robustness (most recent year)","Time-varying alpha",0.135709997193214,0.12942053671556,-0.480379725819711,0.806621194760504
-"20","MiddleYukonR.andtribs.","alpha","robustness (most recent year)","Time-varying alpha",-0.11387478190007,-0.129916556314542,-0.901012280736171,0.775733247229391
-"21","Nordenskiold","alpha","robustness (most recent year)","Time-varying alpha",1.82282287013346,1.84965703125645,0.851385295445176,2.7267913065763
-"22","NorthernYukonR.andtribs.","alpha","robustness (most recent year)","Time-varying alpha",0.0164311808571803,0.0107749431623653,-0.524631101658274,0.596718312602453
-"23","Pelly","alpha","robustness (most recent year)","Time-varying alpha",-0.576825213943628,-0.586964139155028,-1.13235068531054,0.0456214467870591
-"24","Stewart","alpha","robustness (most recent year)","Time-varying alpha",0.383888285546272,0.377504863392948,-0.405454524898544,1.21250187677879
-"25","UpperYukonR.","alpha","robustness (most recent year)","Time-varying alpha",0.308949153484429,0.317426491327045,-0.588666420928799,1.16432949630624
-"26","Whiteandtribs.","alpha","robustness (most recent year)","Time-varying alpha",-0.0254286123103465,-0.0262202778278599,-0.669404190278792,0.637238384793288
-"27","YukonR.Teslinheadwaters","alpha","robustness (most recent year)","Time-varying alpha",1.16907362106539,1.16539410161664,0.368879766785824,1.98070060598575
-"28","Big.Salmon","alpha","stationary","stationary",1.12727533946851,1.07799098178613,0.116719270999047,2.62311779155333
-"29","MiddleYukonR.andtribs.","alpha","stationary","stationary",1.04720755504672,0.998121672206018,0.0812137685712012,2.54407436688838
-"30","Nordenskiold","alpha","stationary","stationary",2.02493113763023,2.03138221635492,1.35572983329933,2.6559238201712
-"31","NorthernYukonR.andtribs.","alpha","stationary","stationary",1.06791526449632,0.994992312293316,0.119287472184991,2.64022162129075
-"32","Pelly","alpha","stationary","stationary",0.900732870556485,0.812639639200918,0.0607960433134824,2.51678961193611
-"33","Stewart","alpha","stationary","stationary",1.29824705080037,1.28736001686585,0.259295525317393,2.42510535788924
-"34","UpperYukonR.","alpha","stationary","stationary",1.22874449409412,1.22707998142361,0.457103565708552,2.01514722447359
-"35","Whiteandtribs.","alpha","stationary","stationary",1.14813286604889,1.04113200723713,0.123878528811812,2.99868290035686
-"36","YukonR.Teslinheadwaters","alpha","stationary","stationary",1.58436554502065,1.61267290465141,0.302360907925461,2.62222733048371
+"1","Big.Salmon","alpha","reference (most recent generation)","Time-varying alpha",0.529587227798433,0.505521762090396,-0.376172106924369,1.47707471421428
+"2","MiddleYukonR.andtribs.","alpha","reference (most recent generation)","Time-varying alpha",0.564970548930199,0.549301790871248,-0.741454460387886,1.839553238693
+"3","Nordenskiold","alpha","reference (most recent generation)","Time-varying alpha",2.17959729507232,2.13584260707252,0.922064902646115,3.68807006596113
+"4","NorthernYukonR.andtribs.","alpha","reference (most recent generation)","Time-varying alpha",0.254793560866431,0.216423912410718,-0.642637183558773,1.22204829373813
+"5","Pelly","alpha","reference (most recent generation)","Time-varying alpha",0.100136838123588,0.131202881043963,-1.01742872357135,1.14241545726744
+"6","Stewart","alpha","reference (most recent generation)","Time-varying alpha",0.780477537822363,0.817836265223472,-0.380211387595017,1.77055832298143
+"7","UpperYukonR.","alpha","reference (most recent generation)","Time-varying alpha",0.736014865061718,0.779012020765472,-0.411289664330261,1.69596178834105
+"8","Whiteandtribs.","alpha","reference (most recent generation)","Time-varying alpha",0.278846742007924,0.257460373614995,-0.485551676946531,1.11006212666375
+"9","YukonR.Teslinheadwaters","alpha","reference (most recent generation)","Time-varying alpha",1.52024469252847,1.56090919157764,0.535290379788181,2.31193603253967
+"10","Big.Salmon","alpha","robustness (long-term average)","Time-varying alpha",1.48740022860553,1.55124881866222,-0.028488876041309,2.55011243914527
+"11","MiddleYukonR.andtribs.","alpha","robustness (long-term average)","Time-varying alpha",1.33958309373369,1.43620115310872,-0.264804807897169,2.40181331508578
+"12","Nordenskiold","alpha","robustness (long-term average)","Time-varying alpha",2.08408373946713,2.08530561858211,0.970562827780724,3.19920825254378
+"13","NorthernYukonR.andtribs.","alpha","robustness (long-term average)","Time-varying alpha",1.48713137902325,1.53670818318185,-0.279750212179609,3.03678299327627
+"14","Pelly","alpha","robustness (long-term average)","Time-varying alpha",1.19075689440099,1.26779856936869,-0.652969302025758,2.30187503223495
+"15","Stewart","alpha","robustness (long-term average)","Time-varying alpha",1.57059915443903,1.58407078265538,0.129366386283269,2.79844615339421
+"16","UpperYukonR.","alpha","robustness (long-term average)","Time-varying alpha",1.36210402391964,1.38110680222838,0.136551240248764,2.37023481363257
+"17","Whiteandtribs.","alpha","robustness (long-term average)","Time-varying alpha",1.25031970656395,1.23705972369476,-0.168403074871737,2.53885544256384
+"18","YukonR.Teslinheadwaters","alpha","robustness (long-term average)","Time-varying alpha",1.93722757457347,1.87014988713414,0.931491391299587,3.06654019569593
+"19","Big.Salmon","alpha","robustness (most recent year)","Time-varying alpha",0.1397189868184,0.13169198429651,-0.476327628649347,0.802689085351466
+"20","MiddleYukonR.andtribs.","alpha","robustness (most recent year)","Time-varying alpha",-0.11898302810182,-0.139546689082578,-0.920901100449553,0.76672214284545
+"21","Nordenskiold","alpha","robustness (most recent year)","Time-varying alpha",1.80949876838417,1.82590352352568,0.808319614655438,2.76170098927854
+"22","NorthernYukonR.andtribs.","alpha","robustness (most recent year)","Time-varying alpha",0.0213087888434533,0.0153789868900525,-0.535560320341757,0.601228281445276
+"23","Pelly","alpha","robustness (most recent year)","Time-varying alpha",-0.581062152094195,-0.584948698641255,-1.13484013460166,0.0161755862936357
+"24","Stewart","alpha","robustness (most recent year)","Time-varying alpha",0.367695462464052,0.362908184821591,-0.437306197700852,1.19481247595969
+"25","UpperYukonR.","alpha","robustness (most recent year)","Time-varying alpha",0.318063230663449,0.326219783754635,-0.610534745196925,1.19734288325615
+"26","Whiteandtribs.","alpha","robustness (most recent year)","Time-varying alpha",-0.02198832759048,-0.0249395933770255,-0.668297542120671,0.661677540421004
+"27","YukonR.Teslinheadwaters","alpha","robustness (most recent year)","Time-varying alpha",1.18339376915543,1.181354347174,0.388670407257741,1.96629753449703
+"28","Big.Salmon","alpha","stationary","stationary",1.14153497400994,1.08081591189019,0.135027372094042,2.66203873601147
+"29","MiddleYukonR.andtribs.","alpha","stationary","stationary",1.06158408102701,0.995389560549784,0.116917924103345,2.60766005193965
+"30","Nordenskiold","alpha","stationary","stationary",2.02724482978281,2.03396633766195,1.38051823011222,2.64686370127556
+"31","NorthernYukonR.andtribs.","alpha","stationary","stationary",1.06843963632652,0.986125305044127,0.101116136165784,2.67953777659237
+"32","Pelly","alpha","stationary","stationary",0.922496363539998,0.810140329199797,0.0762320269655587,2.72758966812654
+"33","Stewart","alpha","stationary","stationary",1.29637807982736,1.29986202349655,0.295969352002719,2.34789913216346
+"34","UpperYukonR.","alpha","stationary","stationary",1.22309417765984,1.21957889070603,0.457906585271178,1.96827794471259
+"35","Whiteandtribs.","alpha","stationary","stationary",1.14812213491125,1.05823257022187,0.138072446048561,2.94052876482881
+"36","YukonR.Teslinheadwaters","alpha","stationary","stationary",1.59336641702723,1.62740381964523,0.403891457605071,2.59014868640262

@@ -43,8 +43,17 @@ CU_prettynames <- c("Northern Yukon R. and tribs.",
                     "Middle Yukon R. and tribs.","Pelly",
                     "Nordenskiold", "Big Salmon",
                     "Upper Yukon R.","Yukon R. Teslin Headwaters")
+CU_prettyFrench <- c("Yukon Nord et ses affluents" , "White et ses affluents ",
+                     "Stewart", "Moyen Yukon et ses affluents" ,
+                     "Pelly",  "Nordenskiold", "Big Salmon",
+                     "Cours supérieur du Yukon", "Eaux d’amont du Yukon-de la Treslin")
+
+
+
+
 CU_name_lookup <- data.frame(CU_f = factor(CU_order, levels=CU_order),
-                             CU_pretty = factor(CU_prettynames, levels=CU_prettynames))
+                             CU_pretty = factor(CU_prettynames, levels=CU_prettynames),
+                             CU_pretty_FR = factor(CU_prettyFrench, levels=CU_prettyFrench))
 
 # Harvest control rules and groups
 ER_seq <- seq(5, 100, 5) # Must match ER_seq in "fwd_sim.R"
@@ -467,6 +476,15 @@ CU_labeller <- as_labeller(c("NorthernYukonR.andtribs." = "Northern Yukon R. and
                "UpperYukonR." = "Upper Yukon R.",
                "YukonR.Teslinheadwaters" = "Yukon R. Teslin Headwaters"))
 
+CU_labeller_FR <- as_labeller(c("NorthernYukonR.andtribs." = "Yukon Nord et ses affluents",
+                             "Whiteandtribs." = "White et ses affluents",
+                             "Stewart" = "Stewart",
+                             "MiddleYukonR.andtribs." = "Moyen Yukon et ses affluents",
+                             "Pelly" = "Pelly",
+                             "Nordenskiold" = "Nordenskiold",
+                             "Big.Salmon" = "Big Salmon",
+                             "UpperYukonR." = "Cours supérieur du Yukon",
+                             "YukonR.Teslinheadwaters" = "Yukon-de la Treslin"))
 # function to derive total reproductive output for a given spawner abundance ----
 #   propF: proportion of spawners that are females
 #   units_per_fish: reproductive output units per fish
