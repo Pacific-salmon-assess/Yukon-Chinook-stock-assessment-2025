@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/898107078.svg)](https://doi.org/10.5281/zenodo.22668714)
+
 # Yukon-Chinook-stock-assessment-2025
 Code to reproduce analysis and documentation for: 
 > Connors, B.M., O’Dell, A., Hunter, H., Glaser, D., Gill, J., Rossi, S., and Churchland, C. 2025. Stock status and biological and fishery consequences of alternative harvest and rebuilding actions for Yukon River Chinook salmon (*Oncorhynchus tshawytscha*). DFO Can. Sci. Advis. Sec. Res. Doc. 2025/nnn. iv + 130 p.
